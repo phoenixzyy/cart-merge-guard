@@ -1,3 +1,12 @@
+# Cart Merge Guard
+
+A Shopizer fork fixing per-line state in cart merging, with regression tests and CI.
+The e-commerce platform is upstream work. See [contribution and limits](PORTFOLIO.md),
+[Chinese learning guide](LEARNING.zh-CN.md), and [verification](PORTFOLIO_PROGRESS.md).
+Apache-2.0 and original notices retained. Prepared with Codex assistance.
+
+## Upstream README
+
 # Shopizer 3 (for java 17 +) (tested with Java 11, 17)
 
 3.2.7

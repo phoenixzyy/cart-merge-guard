@@ -402,9 +402,10 @@ public class ShoppingCartServiceImpl extends SalesManagerEntityServiceImpl<Long,
 		LOGGER.info("Starting merging shopping carts");
 		if (CollectionUtils.isNotEmpty(sessionCart.getLineItems())) {
 			Set<ShoppingCartItem> shoppingCartItemsSet = getShoppingCartItems(sessionCart, store, userShoppingModel);
-			boolean duplicateFound = false;
 			if (CollectionUtils.isNotEmpty(shoppingCartItemsSet)) {
 				for (ShoppingCartItem sessionShoppingCartItem : shoppingCartItemsSet) {
+					// Cart Merge Guard: each incoming line needs an independent merge decision.
+					boolean duplicateFound = false;
 					if (CollectionUtils.isNotEmpty(userShoppingModel.getLineItems())) {
 						for (ShoppingCartItem cartItem : userShoppingModel.getLineItems()) {
 							if (cartItem.getProduct().getId().longValue() == sessionShoppingCartItem.getProduct()
