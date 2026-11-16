@@ -34,3 +34,17 @@
   Fork attempted after Shopizer's baseline succeeded.
 - hook-deadline run 43923772086: five Linux/Windows jobs succeeded; macOS job
   133497650426 remained queued at the latest check. Not claimed fully complete.
+
+## Publication verification — 2026-11-17
+
+- Published code commit: bffdbe76ff02762b40a0d652cd4ee426e2f67429.
+  Parent: 6a4a0a65a3408ee8f62597b51d1b3aac24b77dee; tree:
+  fcc54f3b49617f6684d1b63fdc87b5900dae378e, exactly matching the local
+  verified commit a9c1bcc. Public git fetch and zero tree diff confirmed.
+- GitHub Actions run [43928607008](https://github.com/phoenixzyy/cart-merge-guard/actions/runs/43928607008)
+  succeeded, job 133514667721. Logs confirm all six modules SUCCESS and
+  63 tests reported: 42 executed, 21 skipped, zero failures/errors.
+- This later progress-only commit uses [skip ci]; tested code is unchanged.
+- hook-deadline macOS job 133497650426 in run 43923772086 finished cancelled,
+  not passed. The agent did not request cancellation; cause not established.
+  Five Linux/Windows jobs remain successful. No macOS validation claimed.
