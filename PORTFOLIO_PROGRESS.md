@@ -48,3 +48,7 @@
 - hook-deadline macOS job 133497650426 in run 43923772086 finished cancelled,
   not passed. The agent did not request cancellation; cause not established.
   Five Linux/Windows jobs remain successful. No macOS validation claimed.
+
+## Hook Deadline CI follow-up — 2026-11-22 (UTC)
+
+The [macOS Go 1.26 retry](https://github.com/phoenixzyy/hook-deadline/actions/runs/43923772086/job/137264122333) passed build and tests at Go code commit `80ebc23`; the focused race check passed on Ubuntu Go 1.26 and was skipped on macOS. See the [Hook Deadline verification record](https://github.com/phoenixzyy/hook-deadline/blob/master/PORTFOLIO_PROGRESS.md) for the authoritative Go CI history and later updates.
